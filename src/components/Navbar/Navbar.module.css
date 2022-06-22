@@ -4,9 +4,15 @@
   top: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #161a1d;
-  padding: 15px 10px;
+  padding: 0px 10px;
   box-sizing: border-box;
+}
+
+.title {
+  color: #e9ecef;
+  font-size: 16px;
 }
 
 .navIcon {
