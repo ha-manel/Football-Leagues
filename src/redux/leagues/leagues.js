@@ -19,26 +19,10 @@ export default function leaguesReducer(state = [], action = {}) {
 // Side Effects
 const fetchLeagues = async () => {
   let leagues = [];
-  await axios.get('https://v3.football.api-sports.io/leagues', {
-    headers: {
-      'x-rapidapi-host': 'v3.football.api-sports.io',
-      'x-rapidapi-key': 'aabed6ffaaa4ad309e294100c98626ba',
-    },
-  }).then((response) => {
-    leagues = response.data.response
-      .filter(
-        (leagueObj) => leagueObj.league.id === 186
-          || leagueObj.league.id === 39
-          || leagueObj.league.id === 140
-          || leagueObj.league.id === 135,
-      )
-      .map((leagueObj) => ({
-        league_id: leagueObj.league.id,
-        league_name: leagueObj.league.name,
-        league_logo: leagueObj.league.logo,
-        league_country: leagueObj.country.name,
-      }));
-  });
+  await axios.get('https://football-apis.herokuapp.com/api/v1/leagues')
+    .then((response) => {
+      leagues = response.data.leagues;
+    });
   return leagues;
 };
 
