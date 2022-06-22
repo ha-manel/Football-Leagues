@@ -4,13 +4,13 @@
   top: 0;
   display: flex;
   justify-content: space-between;
-  background-color: #40916c;
+  background-color: #586f6b;
   padding: 15px 10px;
   box-sizing: border-box;
 }
 
 .navIcon {
   font-size: 19px;
-  color: #fff;
+  color: #e9ecef;
   margin: 0 10px;
 }
