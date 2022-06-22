@@ -1,0 +1,52 @@
+.leaguesSection {
+  width: 100vw;
+}
+
+.filterBtns {
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  top: 50px;
+}
+
+.filterBtn {
+  cursor: pointer;
+  flex: 1 1 auto;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e9ecef;
+  background-color: #495057;
+  border: 1px solid #343a40;
+  padding: 10px;
+}
+
+.filteredLeague {
+  display: flex;
+  justify-content: center;
+  color: #e9ecef;
+  background-color: #839788;
+  box-sizing: border-box;
+  margin-top: 80px;
+  padding: 25px;
+}
+
+.leagueImg {
+  width: 85%;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.leagueName {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.leagueCountry {
+  font-size: 16px;
+}
+
+.teamsContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
