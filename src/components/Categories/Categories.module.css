@@ -16,7 +16,7 @@
   font-size: 13px;
   font-weight: 600;
   color: #e9ecef;
-  background-color: #495057;
+  background-color: #212529;
   border: 1px solid #343a40;
   padding: 10px;
 }
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   color: #e9ecef;
-  background-color: #839788;
+  background-color: #4f5d75;
   box-sizing: border-box;
   margin-top: 80px;
   padding: 25px;
