@@ -4,7 +4,7 @@ import styles from './Team.module.css';
 
 function Team({ team }) {
   return (
-    <Link to="/team" state={{ team }}>
+    <Link className={styles.teamLink} to="/team" state={{ team }}>
       <div className={styles.teamContainer}>
         <i className={`${styles.teamDetailsIcon} fa-solid fa-right-from-bracket`} />
         <div className={styles.teamImgContainer}>

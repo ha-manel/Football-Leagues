@@ -1,10 +1,13 @@
+.teamLink {
+  text-decoration: none;
+}
+
 .teamContainer {
   min-height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #e9ecef;
-  text-decoration: none;
   background-color: #212529;
   border: 1px solid #343a40;
   padding: 20px 10px;
@@ -23,11 +26,10 @@
 }
 
 .teamInfo {
-  align-self: flex-end;
-  text-align: right;
+  text-align: center;
   padding-right: 10px;
 }
 
 .teamName {
-  font-size: 18px;
+  font-size: 20px;
 }
