@@ -1,54 +1,50 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-// import { fetchTeams, loadTeams } from '../../redux/teams/teams';
-// import Team from '../Team/Team';
+import Team from '../Team/Team';
+import styles from './Categories.module.css';
 
-function Categories() {
-  // const dispatch = useDispatch();
+function leagueegories() {
   const leagues = useSelector((state) => state.leagues);
-  // const teams = useSelector((state) => state.teams);
-  const [league, setLeague] = useState(leagues.filter((l) => l.league_id === 39)[0]);
+  const [league, setLeague] = useState(leagues.filter((l) => l.name === 'Premier League')[0]);
 
-  const displayLeague = (id) => {
-    setLeague(() => leagues.filter((l) => l.league_id === id)[0]);
-    // const result = await fetchTeams(id, 2021);
-    // dispatch(loadTeams(result));
+  const displayLeague = (name) => {
+    setLeague(() => leagues.filter((l) => l.name === name)[0]);
   };
 
   return (
-    <div>
-      <div>
-        <button type="button" onClick={() => displayLeague(39)}>
+    <div className={styles.leaguesSection}>
+      <div className={styles.filterBtns}>
+        <button className={styles.filterBtn} type="button" onClick={() => displayLeague('Premier League')}>
           Premier League
         </button>
-        <button type="button" onClick={() => displayLeague(135)}>
+        <button className={styles.filterBtn} type="button" onClick={() => displayLeague('Serie A')}>
           Serie A
         </button>
-        <button type="button" onClick={() => displayLeague(140)}>
+        <button className={styles.filterBtn} type="button" onClick={() => displayLeague('La Liga')}>
           La Liga
         </button>
-        <button type="button" onClick={() => displayLeague(186)}>
-          Ligue 1
+        <button className={styles.filterBtn} type="button" onClick={() => displayLeague('Primeira Liga')}>
+          Primeira Liga
         </button>
       </div>
 
-      <div>
+      <div className={styles.filteredLeague}>
         <div>
-          <img src={league.league_logo} alt="league logo" />
+          <img className={styles.leagueImg} src={league.logo} alt="league logo" />
         </div>
         <div>
-          <h3>{league.league_name}</h3>
-          <p>{league.league_country}</p>
+          <h3 className={styles.leagueName}>{league.name}</h3>
+          <p className={styles.leagueCountry}>{league.country}</p>
         </div>
       </div>
-      {/*
-      <div>
-        {teams.length > 1 && teams.map((team) => (
-          <Team key={team.team_id} team={team} />
+
+      <div className={styles.teamsContainer}>
+        {league.teams.map((team) => (
+          <Team key={team.id} team={team} />
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }
 
-export default Categories;
+export default leagueegories;
