@@ -22,9 +22,7 @@ function TeamDetails() {
         </p>
         <p className={styles.teamDetailsInfo}>
           <span className={styles.teamDetailsTitle}>Details:</span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti explicabo
-          deserunt sunt eligendi quaerat voluptatem at, vel animi. Ratione sint assumenda optio
-          fugit odit facere modi enim earum eveniet ullam?
+          {team.details}
         </p>
       </div>
     </div>

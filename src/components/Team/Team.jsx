@@ -25,6 +25,7 @@ Team.propTypes = {
     name: PropTypes.string.isRequired,
     city: PropTypes.string.isRequired,
     founded: PropTypes.number.isRequired,
+    details: PropTypes.string.isRequired,
     logo: PropTypes.string.isRequired,
   }),
 };
