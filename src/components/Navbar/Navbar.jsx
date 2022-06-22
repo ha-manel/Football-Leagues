@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 function Navbar() {
   return (
     <header className={styles.header}>
-      <div><i className={`${styles.navIcon} fa-solid fa-angle-left`} /></div>
+      <Link to="/"><i className={`${styles.navIcon} fa-solid fa-angle-left`} /></Link>
       <div>
         <i className={`${styles.navIcon} fa-solid fa-microphone`} />
         <i className={`${styles.navIcon} fa-solid fa-gear`} />
