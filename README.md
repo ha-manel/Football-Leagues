@@ -66,6 +66,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to code reviewers and to everyone who reviewed the project and made suggestions.
 - Special thanks to [Ali Jendoubi](https://github.com/ichala) for making the API used in this project.
+- App design inspired by [Nelson Sakwa on Behance.](https://www.behance.net/sakwadesignstudio)
 
 ## 📝 License
 
