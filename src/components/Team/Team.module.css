@@ -1,0 +1,35 @@
+.teamLink {
+  text-decoration: none;
+}
+
+.teamContainer {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e9ecef;
+  background-color: #212529;
+  border: 1px solid #343a40;
+  padding: 20px 10px;
+}
+
+.teamDetailsIcon {
+  align-self: flex-end;
+}
+
+.teamImgContainer {
+  width: 66%;
+}
+
+.teamImg {
+  width: 100%;
+}
+
+.teamInfo {
+  text-align: center;
+  padding-right: 10px;
+}
+
+.teamName {
+  font-size: 20px;
+}

@@ -1,0 +1,29 @@
+.teamDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e9ecef;
+  margin-top: 70px;
+}
+
+.teamDetailsContentCnt {
+  padding: 25px;
+}
+
+.teamDetailsName {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.teamDetailsInfo {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.teamDetailsTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #c0c0c0;
+  margin-right: 8px;
+}

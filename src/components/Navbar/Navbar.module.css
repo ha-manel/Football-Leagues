@@ -1,0 +1,22 @@
+.header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161a1d;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.title {
+  color: #e9ecef;
+  font-size: 16px;
+}
+
+.navIcon {
+  font-size: 19px;
+  color: #e9ecef;
+  margin: 0 10px;
+}
