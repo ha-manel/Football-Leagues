@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`page render test: Homepage renders correctly 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="header"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="navIcon fa-solid fa-angle-left"
+      />
+    </a>
+    <p
+      className="title"
+    >
+      Football Leagues
+    </p>
+    <div>
+      <i
+        className="navIcon fa-solid fa-microphone"
+      />
+      <i
+        className="navIcon fa-solid fa-gear"
+      />
+    </div>
+  </header>
+  <i
+    className="fas fa-circle-notch fa-spin"
+  />
+</div>
+`;
